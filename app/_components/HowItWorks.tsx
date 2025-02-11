@@ -15,7 +15,7 @@ const HowItWorksSection = () => {
                 {/* Ícone de agendamento */}
               </div>
               <h3 className="text-2xl font-semibold mb-4">Agende sua Sessão</h3>
-              <p className="text-lg opacity-80">
+              <p className="text-lg opacity-100">
                 Clique no link para agendar sua sessão via WhatsApp. Escolha um
                 horário que melhor se adapte à sua rotina.
               </p>
@@ -28,7 +28,7 @@ const HowItWorksSection = () => {
                 {/* Ícone de chamada */}
               </div>
               <h3 className="text-2xl font-semibold mb-4">Inicie a Sessão</h3>
-              <p className="text-lg opacity-80">
+              <p className="text-lg opacity-100">
                 Após o agendamento, um psicólogo qualificado entrará em contato
                 pelo WhatsApp para iniciar a sua sessão de terapia.
               </p>
@@ -41,7 +41,7 @@ const HowItWorksSection = () => {
                 {/* Ícone de aprovação */}
               </div>
               <h3 className="text-2xl font-semibold mb-4">Receba o Apoio</h3>
-              <p className="text-lg opacity-80">
+              <p className="text-lg opacity-100">
                 Ao final da sessão, você terá o apoio necessário para lidar com
                 suas questões, com dicas e orientações para seu bem-estar.
               </p>
