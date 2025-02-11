@@ -5,9 +5,9 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative flex h-screen text-center bg-blue-500 text-white"
+      className="relative flex flex-col md:flex-row justify-center items-center min-h-screen text-center bg-blue-500 text-white px-6 pt-24"
     >
-      <div className="flex flex-col md:flex-row max-w-6xl mx-auto items-center justify-center space-between">
+      <div className="flex flex-col md:flex-row max-w-6xl mx-auto items-center justify-between w-full space-between">
         {/* Texto */}
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
           <h1 className="text-5xl md:text-7xl font-extrabold leading-tight uppercase">
