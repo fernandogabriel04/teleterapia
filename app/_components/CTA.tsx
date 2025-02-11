@@ -1,6 +1,6 @@
 const CTA = () => {
     return (
-      <section className="bg-blue-500 py-16 text-white text-center">
+      <section className="bg-blue-500 py-36 text-white text-center">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
             Pronto para Começar Sua Jornada de Cuidados?

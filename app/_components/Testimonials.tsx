@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TestimonialsSection = () => {
     return (
-      <section className="bg-white py-16">
+      <section className="bg-white py-36">
         <div className="max-w-6xl mx-auto text-center px-6">
           <h2 className="text-4xl md:text-5xl font-extrabold text-blue-500 mb-12">
             O que Nossos Pacientes Dizem
