@@ -14,7 +14,7 @@ const BenefitsSection = () => {
                             {/* Icone de headset */}
                         </div>
                         <h3 className="text-xl font-semibold mb-4">Acessibilidade</h3>
-                        <p className="text-lg opacity-100">
+                        <p className="text-lg">
                             Oferecemos atendimentos psicológicos gratuitos, tornando o apoio
                             psicológico acessível a todos.
                         </p>
@@ -27,7 +27,7 @@ const BenefitsSection = () => {
                         <h3 className="text-xl font-semibold mb-4">
                             Profissionais Qualificados
                         </h3>
-                        <p className="text-lg opacity-100">
+                        <p className="text-lg">
                             Todos os atendimentos são realizados por psicólogos experientes
                             e qualificados, garantindo um serviço de qualidade.
                         </p>
@@ -38,7 +38,7 @@ const BenefitsSection = () => {
                             {/* Icone de conversa */}
                         </div>
                         <h3 className="text-xl font-semibold mb-4">Comodidade</h3>
-                        <p className="text-lg opacity-100">
+                        <p className="text-lg">
                             Realize suas sessões de terapia no conforto da sua casa, sem
                             sair do lugar.
                         </p>
