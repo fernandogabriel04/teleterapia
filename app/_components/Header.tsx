@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -33,20 +34,27 @@ const Header = () => {
             Como Funciona
           </Link>
           <Link
-            href="#contact"
+            href="#feedbacks"
             className="hover:text-gray-200 transition duration-300"
           >
-            Contato
+            Feedbacks
+          </Link>
+          <Link
+            href="#faq"
+            className="hover:text-gray-200 transition duration-300"
+          >
+            FAQ
           </Link>
         </nav>
 
         {/* Botão "Agendar Agora" à direita */}
-        <div className="hidden md:block">
+        <div className="flex items-center">
           <Link
             href="https://wa.me/33125492"
             target="_blank"
-            className="bg-white text-blue-500 font-semibold py-2 px-6 rounded-full text-lg shadow-lg hover:bg-gray-200 transition duration-300"
+            className="flex items-center bg-white text-blue-500 font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-gray-200 transition duration-300"
           >
+            <FaWhatsapp className="mr-2 text-lg" />
             Agendar Agora
           </Link>
         </div>
