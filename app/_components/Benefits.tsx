@@ -1,3 +1,5 @@
+import { FaHeadset, FaRegComments, FaRegUser } from "react-icons/fa";
+
 const BenefitsSection = () => {
     return (
         <section id="benefits" className="bg-gray-50 py-36">
@@ -8,7 +10,7 @@ const BenefitsSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div className="flex flex-col items-center">
                         <div className="bg-blue-500 text-white p-6 rounded-full mb-6">
-                            <i className="fas fa-headset text-4xl"></i>{" "}
+                            <FaHeadset className="text-4xl"/>{" "}
                             {/* Icone de headset */}
                         </div>
                         <h3 className="text-xl font-semibold mb-4">Acessibilidade</h3>
@@ -19,7 +21,7 @@ const BenefitsSection = () => {
                     </div>
                     <div className="flex flex-col items-center">
                         <div className="bg-blue-500 text-white p-6 rounded-full mb-6">
-                            <i className="fas fa-user-md text-4xl"></i>{" "}
+                            <FaRegUser className="text-4xl"/>{" "}
                             {/* Icone de psicologo */}
                         </div>
                         <h3 className="text-xl font-semibold mb-4">
@@ -32,7 +34,7 @@ const BenefitsSection = () => {
                     </div>
                     <div className="flex flex-col items-center">
                         <div className="bg-blue-500 text-white p-6 rounded-full mb-6">
-                            <i className="fas fa-comments text-4xl"></i>{" "}
+                            <FaRegComments className="text-4xl"/>{" "}
                             {/* Icone de conversa */}
                         </div>
                         <h3 className="text-xl font-semibold mb-4">Comodidade</h3>
