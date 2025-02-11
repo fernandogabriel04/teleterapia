@@ -17,7 +17,7 @@ const HeroSection = () => {
             Você se surpreenderá. Fale com a gente.
           </p>
           <Link
-            href="https://wa.me/seu-numero-whatsapp"
+            href="https://wa.me/33125492"
             target="_blank"
             className="bg-white text-blue-500 font-semibold py-4 px-8 rounded-full text-lg shadow-lg hover:bg-gray-200 transition duration-300"
           >
