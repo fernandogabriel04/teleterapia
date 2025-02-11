@@ -1,3 +1,5 @@
+import { FaPhoneAlt, FaRegCalendarCheck, FaRegThumbsUp } from "react-icons/fa";
+
 const HowItWorksSection = () => {
     return (
       <section id="how-it-works" className="bg-blue-50 py-36">
@@ -9,7 +11,7 @@ const HowItWorksSection = () => {
             {/* Passo 1 */}
             <div className="flex flex-col items-center bg-white p-8 rounded-lg shadow-lg">
               <div className="bg-blue-500 text-white p-4 rounded-full mb-6">
-                <i className="fas fa-calendar-check text-4xl"></i>{" "}
+                <FaRegCalendarCheck className="text-4xl"/>{" "}
                 {/* Ícone de agendamento */}
               </div>
               <h3 className="text-2xl font-semibold mb-4">Agende sua Sessão</h3>
@@ -22,7 +24,7 @@ const HowItWorksSection = () => {
             {/* Passo 2 */}
             <div className="flex flex-col items-center bg-white p-8 rounded-lg shadow-lg">
               <div className="bg-blue-500 text-white p-4 rounded-full mb-6">
-                <i className="fas fa-phone-alt text-4xl"></i>{" "}
+                <FaPhoneAlt  className="fas fa-phone-alt text-4xl"/>{" "}
                 {/* Ícone de chamada */}
               </div>
               <h3 className="text-2xl font-semibold mb-4">Inicie a Sessão</h3>
@@ -35,7 +37,7 @@ const HowItWorksSection = () => {
             {/* Passo 3 */}
             <div className="flex flex-col items-center bg-white p-8 rounded-lg shadow-lg">
               <div className="bg-blue-500 text-white p-4 rounded-full mb-6">
-                <i className="fas fa-thumbs-up text-4xl"></i>{" "}
+                <FaRegThumbsUp className="fas fa-thumbs-up text-4xl"/>{" "}
                 {/* Ícone de aprovação */}
               </div>
               <h3 className="text-2xl font-semibold mb-4">Receba o Apoio</h3>
