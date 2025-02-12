@@ -13,7 +13,7 @@ const HowItWorksSection = () => {
             <div className="bg-blue-500 text-white p-4 rounded-full mb-6">
               <FaRegCalendarCheck className="text-4xl" /> {/* Ícone de agendamento */}
             </div>
-            <h3 className="text-2xl font-semibold mb-4">Agende sua Sessão</h3>
+            <h3 className="text-2xl text-black opacity-100 font-semibold mb-4">Agende sua Sessão</h3>
             <p className="text-lg text-black opacity-100">
               Clique no link para agendar sua sessão via WhatsApp. Escolha um
               horário que melhor se adapte à sua rotina.
@@ -25,7 +25,7 @@ const HowItWorksSection = () => {
             <div className="bg-blue-500 text-white p-4 rounded-full mb-6">
               <FaPhoneAlt className="text-4xl" /> {/* Ícone de chamada */}
             </div>
-            <h3 className="text-2xl font-semibold mb-4">Inicie a Sessão</h3>
+            <h3 className="text-2xl text-black opacity-100 font-semibold mb-4">Inicie a Sessão</h3>
             <p className="text-lg text-black opacity-100">
               Após o agendamento, um psicólogo qualificado entrará em contato
               pelo WhatsApp para iniciar a sua sessão de terapia.
@@ -37,7 +37,7 @@ const HowItWorksSection = () => {
             <div className="bg-blue-500 text-white p-4 rounded-full mb-6">
               <FaRegThumbsUp className="text-4xl" /> {/* Ícone de aprovação */}
             </div>
-            <h3 className="text-2xl font-semibold mb-4">Receba o Apoio</h3>
+            <h3 className="text-2xl text-black opacity-100 font-semibold mb-4">Receba o Apoio</h3>
             <p className="text-lg text-black opacity-100">
               Ao final da sessão, você terá o apoio necessário para lidar com
               suas questões, com dicas e orientações para seu bem-estar.
