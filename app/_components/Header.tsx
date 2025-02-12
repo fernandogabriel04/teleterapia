@@ -50,7 +50,7 @@ const Header = () => {
         {/* Botão "Agendar Agora" à direita */}
         <div className="flex items-center">
           <Link
-            href="https://wa.me/33125492"
+            href="https://wa.me/+558233125492"
             target="_blank"
             className="flex items-center bg-white text-blue-500 font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-gray-200 transition duration-300"
           >

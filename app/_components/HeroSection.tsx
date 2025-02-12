@@ -17,7 +17,7 @@ const HeroSection = () => {
             Não silencie suas emoções. Fale com a gente.
           </p>
           <Link
-            href="https://wa.me/33125492"
+            href="https://wa.me/+558233125492"
             target="_blank"
             className="bg-white text-blue-500 font-semibold py-4 px-8 rounded-full text-lg shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105 hover:shadow-2xl"
           >
