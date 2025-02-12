@@ -1,4 +1,5 @@
 import { FaPhoneAlt, FaRegCalendarCheck, FaRegThumbsUp } from "react-icons/fa";
+import CTAButton from "./cta-button";
 
 const HowItWorksSection = () => {
   return (
@@ -18,6 +19,7 @@ const HowItWorksSection = () => {
               Clique no link para agendar sua sessão via WhatsApp. Escolha um
               horário que melhor se adapte à sua rotina.
             </p>
+            <CTAButton />
           </div>
 
           {/* Passo 2 */}
@@ -30,6 +32,7 @@ const HowItWorksSection = () => {
               Após o agendamento, um psicólogo qualificado entrará em contato
               pelo WhatsApp para iniciar a sua sessão de terapia.
             </p>
+            <CTAButton />
           </div>
 
           {/* Passo 3 */}
@@ -42,6 +45,7 @@ const HowItWorksSection = () => {
               Ao final da sessão, você terá o apoio necessário para lidar com
               suas questões, com dicas e orientações para seu bem-estar.
             </p>
+            <CTAButton />
           </div>
         </div>
       </div>

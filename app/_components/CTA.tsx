@@ -1,3 +1,5 @@
+import CTAButton from "./cta-button";
+
 const CTA = () => {
     return (
       <section className="bg-blue-500 py-36 text-white text-center">
@@ -8,13 +10,7 @@ const CTA = () => {
           <p className="text-lg md:text-xl opacity-80 mb-8">
           Faça uma sessão de teleterapia gratuita com um psicólogo qualificado e comece a cuidar de sua saúde mental hoje.
           </p>
-          <a
-            href="https://wa.me/+558233125492"
-            target="_blank"
-            className="bg-white text-blue-500 font-semibold py-4 px-8 rounded-full text-lg shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105 hover:shadow-md"
-          >
-            Faça sua Sessão Agora
-          </a>
+          <CTAButton />
         </div>
       </section>
     );
