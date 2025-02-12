@@ -55,7 +55,7 @@ const Header = () => {
             className="flex items-center bg-white text-blue-500 font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-gray-200 transition duration-300"
           >
             <FaWhatsapp className="mr-2 text-lg" />
-            Agendar Agora
+            Atendimento 24h
           </Link>
         </div>
       </div>

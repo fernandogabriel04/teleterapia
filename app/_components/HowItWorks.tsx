@@ -13,7 +13,7 @@ const HowItWorksSection = () => {
             <div className="bg-blue-500 text-white p-4 rounded-full mb-6">
               <FaRegCalendarCheck className="text-4xl" /> {/* Ícone de agendamento */}
             </div>
-            <h3 className="text-2xl text-black opacity-100 font-semibold mb-4">Agende sua Sessão</h3>
+            <h3 className="text-2xl text-black opacity-100 font-semibold mb-4">Faça sua Sessão</h3>
             <p className="text-lg text-black opacity-100">
               Clique no link para agendar sua sessão via WhatsApp. Escolha um
               horário que melhor se adapte à sua rotina.

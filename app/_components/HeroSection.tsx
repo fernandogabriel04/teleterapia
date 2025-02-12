@@ -21,12 +21,12 @@ const HeroSection = () => {
             target="_blank"
             className="bg-white text-blue-500 font-semibold py-4 px-8 rounded-full text-lg shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105 hover:shadow-2xl"
           >
-            Agende sua Sessão no WhatsApp
+            Faça sua Sessão no WhatsApp
           </Link>
         </div>
 
         {/* Imagem da coruja */}
-        <div className="w-full flex lg:w-1/2 justify-center md:justify-end z-20 mb-[4.5rem]">
+        <div className="w-full flex lg:w-1/2 justify-center md:justify-end z-20 mb-[5rem]">
           <div className="relative group mx-auto">
             {/* Adicionando um efeito de sombra suave na imagem ao passar o mouse */}
             <div className="absolute inset-0 opacity-30 rounded-lg group-hover:opacity-0 transition-opacity duration-300 bg-[radial-gradient(circle_at_50%_50%,#fff,transparent_50%)] z-0"></div>
@@ -36,7 +36,7 @@ const HeroSection = () => {
               width={500}
               height={500}
               priority
-              className="relative w-auto h-auto max-w-64 md:max-w-sm transition-transform duration-300 group-hover:scale-110"
+              className="relative w-auto h-auto max-w-48 md:max-w-sm transition-transform duration-300 group-hover:scale-110"
             />
           </div>
         </div>

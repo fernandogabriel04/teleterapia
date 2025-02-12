@@ -15,8 +15,7 @@ const BenefitsSection = () => {
             </div>
             <h3 className="text-xl text-black opacity-100 font-semibold mb-4">Acessibilidade</h3>
             <p className="text-lg text-black opacity-100">
-              Oferecemos atendimentos psicológicos gratuitos, tornando o apoio
-              psicológico acessível a todos.
+              Oferecemos atendimentos gratuitos, tornando a teleterapia acessível a todos.
             </p>
           </div>
 
