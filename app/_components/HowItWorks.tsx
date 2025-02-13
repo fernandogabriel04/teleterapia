@@ -11,7 +11,7 @@ const HowItWorksSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Passo 1 */}
           <div className="flex flex-col items-center bg-white p-8 rounded-lg shadow-lg">
-            <div className="bg-blue-500 text-white p-4 rounded-full mb-6">
+            <div className="bg-gradient-to-b from-[#3B82F6] to-[#234C90] text-white p-4 rounded-full mb-6">
               <FaRegCalendarCheck className="text-4xl" /> {/* Ícone de agendamento */}
             </div>
             <h3 className="text-2xl text-black opacity-100 font-semibold mb-4">Faça sua Sessão</h3>
@@ -24,7 +24,7 @@ const HowItWorksSection = () => {
 
           {/* Passo 2 */}
           <div className="flex flex-col items-center bg-white p-8 rounded-lg shadow-lg">
-            <div className="bg-blue-500 text-white p-4 rounded-full mb-6">
+            <div className="bg-gradient-to-b from-[#3B82F6] to-[#234C90] text-white p-4 rounded-full mb-6">
               <FaPhoneAlt className="text-4xl" /> {/* Ícone de chamada */}
             </div>
             <h3 className="text-2xl text-black opacity-100 font-semibold mb-4">Inicie a Sessão</h3>
@@ -37,7 +37,7 @@ const HowItWorksSection = () => {
 
           {/* Passo 3 */}
           <div className="flex flex-col items-center bg-white p-8 rounded-lg shadow-lg">
-            <div className="bg-blue-500 text-white p-4 rounded-full mb-6">
+            <div className="bg-gradient-to-b from-[#3B82F6] to-[#234C90] text-white p-4 rounded-full mb-6">
               <FaRegThumbsUp className="text-4xl" /> {/* Ícone de aprovação */}
             </div>
             <h3 className="text-2xl text-black opacity-100 font-semibold mb-4">Receba o Apoio</h3>

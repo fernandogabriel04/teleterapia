@@ -10,7 +10,7 @@ const BenefitsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Benefício 1 */}
           <div className="flex flex-col items-center">
-            <div className="bg-blue-500 text-white p-6 rounded-full mb-6">
+            <div className="bg-gradient-to-b from-[#3B82F6] to-[#234C90] text-white p-6 rounded-full mb-6">
               <FaHeadset className="text-4xl" /> {/* Ícone de headset */}
             </div>
             <h3 className="text-xl text-black opacity-100 font-semibold mb-4">Acessibilidade</h3>
@@ -21,7 +21,7 @@ const BenefitsSection = () => {
 
           {/* Benefício 2 */}
           <div className="flex flex-col items-center">
-            <div className="bg-blue-500 text-white p-6 rounded-full mb-6">
+            <div className="bg-gradient-to-b from-[#3B82F6] to-[#234C90] text-white p-6 rounded-full mb-6">
               <FaRegUser className="text-4xl" /> {/* Ícone de psicólogo */}
             </div>
             <h3 className="text-xl text-black opacity-100 font-semibold mb-4">Profissionais Qualificados</h3>
@@ -33,7 +33,7 @@ const BenefitsSection = () => {
 
           {/* Benefício 3 */}
           <div className="flex flex-col items-center">
-            <div className="bg-blue-500 text-white p-6 rounded-full mb-6">
+            <div className="bg-gradient-to-b from-[#3B82F6] to-[#234C90] text-white p-6 rounded-full mb-6">
               <FaRegComments className="text-4xl" /> {/* Ícone de conversa */}
             </div>
             <h3 className="text-xl text-black opacity-100 font-semibold mb-4">Comodidade</h3>

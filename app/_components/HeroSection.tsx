@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative flex flex-col md:flex-row justify-start items-center md:min-h-screen text-center bg-blue-500 text-white px-6 pt-24 mt-8 md:mt-0"
+      className="relative flex flex-col md:flex-row justify-start items-center md:min-h-screen text-center bg-gradient-to-b from-[#3B82F6] to-[#234C90] text-white px-6 pt-24 mt-8 md:mt-0"
     >
       <div className="flex flex-col md:flex-row max-w-6xl mx-auto items-center justify-between w-full space-between h-auto">
         {/* Texto */}
