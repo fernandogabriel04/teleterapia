@@ -9,7 +9,7 @@ const HeroSection = () => {
     >
       <div className="flex flex-col md:min-h-96 lg:flex-row max-w-6xl mx-auto items-center justify-between w-full space-between h-full">
         {/* Texto */}
-        <div className="w-full md:w-auto md:h-auto lg:w-1/2 flex flex-col items-center md:items-start text-center md:text-left z-20 relative md:-mt-72 md:-ml-40 lg:mt-0 lg:ml-0">
+        <div className="w-full md:w-auto md:h-auto lg:w-1/2 flex flex-col items-center md:items-start text-center md:text-left z-20 relative mt-28 sm:mt-16 md:-mt-72 md:-ml-40 lg:mt-0 lg:ml-0">
           <h1 className="text-blue-500 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight uppercase">
             Teleterapia <br /> Gratuita
           </h1>
@@ -43,7 +43,7 @@ const HeroSection = () => {
             width={100}
             height={100}
             priority
-            className="absolute sm:left-10 sm:top-[210px] md:top-0 md:left-20 lg:left-[320px] xl:left-[430px] max-w-20 md:max-w-24 h-auto animate-move-24h"
+            className="absolute sm:left-10 sm:top-[150px] md:top-0 md:left-20 lg:left-[320px] xl:left-[430px] max-w-20 md:max-w-24 h-auto animate-move-24h"
           />
           {/* Imagem da Coruja */}
           <Image
@@ -52,7 +52,7 @@ const HeroSection = () => {
             width={500}
             height={500}
             priority
-            className="absolute -right-[100px] top-[240px] md:top-0 lg:right-28 xl:right-10 max-w-48 md:max-w-sm md:-right-44 z-0"
+            className="absolute -right-[100px] top-[170px] md:top-0 lg:right-28 xl:right-10 max-w-48 md:max-w-sm md:-right-44 z-0"
           />
         </div>
 
