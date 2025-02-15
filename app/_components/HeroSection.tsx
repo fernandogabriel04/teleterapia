@@ -5,41 +5,57 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative flex flex-col md:flex-row justify-start items-center md:min-h-screen text-center bg-gradient-to-b from-[#3B82F6] to-[#234C90] text-white px-6 pt-24 mt-8 md:mt-0"
+      className="relative flex flex-col md:flex-row justify-start items-center min-h-[700px] sm:min-h-[850px]  md:min-h-[1222px] lg:min-h-[918px] text-center bg-[#EFF6FF] text-white px-6 pt-24 mt-8 md:mt-0"
     >
-      <div className="flex flex-col md:flex-row max-w-6xl mx-auto items-center justify-between w-full space-between h-auto">
+      <div className="flex flex-col md:min-h-96 lg:flex-row max-w-6xl mx-auto items-center justify-between w-full space-between h-full">
         {/* Texto */}
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight uppercase">
+        <div className="w-full md:w-auto md:h-auto lg:w-1/2 flex flex-col items-center md:items-start text-center md:text-left z-20 relative md:-mt-72 md:-ml-40 lg:mt-0 lg:ml-0">
+          <h1 className="text-blue-500 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight uppercase">
             Teleterapia <br /> Gratuita
           </h1>
-          <p className="text-lg md:text-2xl mt-4 mb-8 opacity-80">
+          <p className="text-blue-500 text-[1rem] md:text-2xl mt-4 mb-8 opacity-80">
             Não silencie suas emoções. Fale com a gente.
           </p>
           <Link
             href="https://wa.me/+558233125492"
             target="_blank"
-            className="bg-white text-blue-500 font-semibold py-4 px-8 rounded-full text-lg shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105 hover:shadow-2xl"
+            className="bg-gradient-to-b from-[#3B82F6] to-[#234C90] text-[#EFF6FF] font-semibold py-4 px-8 rounded-full text-lg shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105 hover:shadow-2xl"
           >
             Faça sua Sessão no WhatsApp
           </Link>
         </div>
 
-        {/* Imagem da coruja */}
-        <div className="w-full flex lg:w-1/2 justify-center md:justify-end z-20 mb-[5rem]">
-          <div className="relative group mx-auto">
-            {/* Adicionando um efeito de sombra suave na imagem ao passar o mouse */}
-            <div className="absolute inset-0 opacity-30 rounded-lg group-hover:opacity-0 transition-opacity duration-300 bg-[radial-gradient(circle_at_50%_50%,#fff,transparent_50%)] z-0"></div>
-            <Image
-              src="/owl-herosection.png"
-              alt="Coruja representando a teleterapia gratuita"
-              width={500}
-              height={500}
-              priority
-              className="relative w-auto h-auto max-w-48 md:max-w-sm transition-transform duration-300 group-hover:scale-110"
-            />
-          </div>
+        {/* Div Imagens */}
+        <div className="w-auto h-full relative md:h-auto lg:w-1/2 justify-center mb-[5rem] lg:-mr-10 lg:space-x-10 hidden sm:block">
+          {/* Mensagem Campanha do mês */}
+          <Image
+            src="/campaings-month.svg"
+            alt="Campanha do mês"
+            width={200}
+            height={50}
+            priority
+            className="absolute bottom-0 w-auto h-auto hidden md:block md:max-w-[550px] md:-left-80 lg:-left-12 lg:max-w-lg -left-4 animate-message animate-move-message"
+          />
+          {/* Imagem 24h */}
+          <Image
+            src="/24h.svg"
+            alt="Ícones de 24 horas"
+            width={100}
+            height={100}
+            priority
+            className="absolute sm:left-10 sm:top-[210px] md:top-0 md:left-20 lg:left-[320px] xl:left-[430px] max-w-20 md:max-w-24 h-auto animate-move-24h"
+          />
+          {/* Imagem da Coruja */}
+          <Image
+            src="/owl.png"
+            alt="Coruja representando a teleterapia gratuita"
+            width={500}
+            height={500}
+            priority
+            className="absolute -right-[100px] top-[240px] md:top-0 lg:right-28 xl:right-10 max-w-48 md:max-w-sm md:-right-44 z-0"
+          />
         </div>
+
 
         {/* Div de Parceiros no canto inferior direito, ocupando toda a largura */}
         <div className="absolute bottom-0 left-0 w-full h-[100px] bg-gray-50 rounded-none z-10 items-center justify-center flex">
