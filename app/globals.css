@@ -19,3 +19,64 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Animação da mensagem aparecendo */
+@keyframes messageAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Desloca um pouco para baixo */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Volta à posição original */
+  }
+}
+
+/* Animação do movimento circular */
+@keyframes circularMessage {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Animação do movimento circular */
+@keyframes circularMotion {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateX(3px) translateY(0px);
+  }
+  50% {
+    transform: translateX(0px) translateY(3px);
+  }
+  75% {
+    transform: translateX(-3px) translateY(0px);
+  }
+  100% {
+    transform: translateX(0px) translateY(-3px);
+  }
+}
+
+/* Aplicando múltiplas animações */
+.animate-message {
+  animation: messageAppear 2s ease-out forwards, circularMessage 4s ease-in-out infinite;
+}
+
+/* Aplicando a animação do movimento circular à imagem de 24h */
+.animate-move-24h {
+  animation: circularMotion 4s linear infinite; /* Movimento contínuo */
+}
+
