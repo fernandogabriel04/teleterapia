@@ -10,8 +10,8 @@ const HeroSection = () => {
       <div className="flex flex-col md:min-h-96 lg:flex-row max-w-6xl mx-auto items-center justify-between w-full space-between h-full">
         {/* Texto */}
         <div className="w-full md:w-auto md:h-auto lg:w-1/2 flex flex-col items-center md:items-start text-center md:text-left z-20 relative mt-28 sm:mt-16 md:-mt-72 md:-ml-40 lg:mt-0 lg:ml-0">
-          <h1 className="text-blue-500 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight uppercase">
-            Teleterapia <br /> Gratuita
+          <h1 className="text-blue-800 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight uppercase">
+            Teleterapia <br /><span className="text-orange-400"> de Maceió</span>
           </h1>
           <p className="text-blue-500 text-[1rem] md:text-2xl mt-4 mb-8 opacity-80">
             Não silencie suas emoções. Fale com a gente.
@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="w-auto h-full relative md:h-auto lg:w-1/2 justify-center mb-[5rem] lg:-mr-10 lg:space-x-10 hidden sm:block">
           {/* Mensagem Campanha do mês */}
           <Image
-            src="/campaings-month.svg"
+            src="/campaings/campaings-march.svg"
             alt="Campanha do mês"
             width={200}
             height={50}

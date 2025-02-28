@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Teleterapia Gratuita</title>
-        <meta name="description" content="Acesse a teleterapia gratuita e receba atendimento psicológico sem custos." />
+        <title>Teleterapia de Maceió</title>
+        <meta name="description" content="Acesse a teleterapia de Maceió e receba atendimento psicológico sem custos." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />

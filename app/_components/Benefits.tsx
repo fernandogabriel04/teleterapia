@@ -5,7 +5,7 @@ const BenefitsSection = () => {
     <section id="benefits" className="bg-gray-50 py-36">
       <div className="max-w-6xl mx-auto text-center px-6">
         <h2 className="text-4xl md:text-5xl font-extrabold text-blue-500 mb-12">
-          Benefícios da Teleterapia Gratuita
+          Benefícios da Teleterapia de Maceió
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Benefício 1 */}
