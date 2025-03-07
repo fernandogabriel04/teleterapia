@@ -8,8 +8,18 @@ const HeroSection = () => {
       className="relative flex flex-col md:flex-row justify-start items-center min-h-[700px] sm:min-h-[850px]  md:min-h-[1222px] lg:min-h-[918px] text-center bg-[#EFF6FF] text-white px-6 pt-24 mt-8 md:mt-0"
     >
       <div className="flex flex-col md:min-h-96 lg:flex-row max-w-6xl mx-auto items-center justify-between w-full space-between h-full">
+          {/* Imagem Parceiros */}
+          <Image
+            src="parceiros.svg"
+            alt="Parceiros"
+            width={200}
+            height={50}
+            priority
+            className="absolute top-[100px] w-auto h-auto max-w-64  md:max-w-sm lg:max-w-lg"
+          />
         {/* Texto */}
-        <div className="w-full md:w-auto md:h-auto lg:w-1/2 flex flex-col items-center md:items-start text-center md:text-left z-20 relative mt-28 sm:mt-16 md:-mt-72 md:-ml-40 lg:mt-0 lg:ml-0">
+        <div className="w-full md:w-auto md:h-auto lg:w-1/2 flex flex-col items-center md:items-start text-center md:text-left z-20 relative mt-28 sm:mt-16 md:-mt-60 md:-ml-40 lg:mt-0 lg:ml-0">
+          
           <h1 className="text-blue-800 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight uppercase">
             Teleterapia <br /><span className="text-orange-400"> de Maceió</span>
           </h1>
@@ -34,7 +44,7 @@ const HeroSection = () => {
             width={200}
             height={50}
             priority
-            className="absolute bottom-0 w-auto h-auto hidden md:block md:max-w-[550px] md:-left-80 lg:-left-12 lg:max-w-lg -left-4 animate-message animate-move-message"
+            className="absolute bottom-14 w-auto h-auto hidden md:block md:max-w-[550px] md:-left-80 lg:-left-14 xl:-left-0 lg:max-w-lg -left-4 animate-message animate-move-message"
           />
           {/* Imagem 24h */}
           <Image
@@ -43,7 +53,7 @@ const HeroSection = () => {
             width={100}
             height={100}
             priority
-            className="absolute sm:left-10 sm:top-[150px] md:top-0 md:left-20 lg:left-[320px] xl:left-[430px] max-w-20 md:max-w-24 h-auto animate-move-24h"
+            className="absolute sm:left-10 sm:top-[50px] md:top-0 md:left-20 lg:left-[320px] xl:left-[430px] max-w-20 md:max-w-24 h-auto animate-move-24h"
           />
           {/* Imagem da Coruja */}
           <Image
@@ -52,21 +62,24 @@ const HeroSection = () => {
             width={500}
             height={500}
             priority
-            className="absolute -right-[100px] top-[170px] md:top-0 lg:right-28 xl:right-10 max-w-48 md:max-w-sm md:-right-44 z-0"
+            className="absolute -right-[100px] top-[50px] max-w-80 md:-top-20 lg:-left-20 xl:left-0 md:max-w-lg md:-right-44 z-0"
           />
+          
         </div>
 
+        {/* Imagem iscb */}
+        <Image
+            src="/iscb.svg"
+            alt="Coruja representando a teleterapia gratuita"
+            width={120}
+            height={120}
+            priority
+            className="absolute right-5 bottom-[100px] w-auto h-auto max-w-64  md:max-w-sm lg:max-w-lg"
+          />
 
         {/* Div de Parceiros no canto inferior direito, ocupando toda a largura */}
-        <div className="absolute bottom-0 left-0 w-full h-[100px] bg-gray-50 rounded-none z-10 items-center justify-center flex">
-          <Image
-            src="/parceiros.png"
-            alt="Parceiros"
-            width={300}
-            height={80}
-            priority
-            className="relative w-auto h-auto max-w-xs md:max-w-sm z-0"
-          />
+        <div className="absolute bottom-0 left-0 w-full h-[100px] bg-gray-50 rounded-none z-10 items-center justify-center flex rounded-t-[60px]">
+          
         </div>
       </div>
     </section>
