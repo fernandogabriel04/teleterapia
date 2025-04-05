@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins, Geist_Mono } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import WhatsAppButton from "./_components/FixedWhatsapp";
+import Image from "next/image";
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['300', '400', '600', '700'],
-  variable: '--font-poppins',
-});
+const openSans = Open_Sans({ subsets: ["latin"] });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Teleterapia",
@@ -26,9 +20,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${geistMono.variable} antialiased`}
+        className={`${openSans.className} antialiased max-w-[1400px] px-[2.5rem] mx-auto text-white text-[1.44rem] bg-primary-blue`}
       >
         {children}
+        {/* Imagem de fundo simbólica (fixa na lateral direita) */}
+        <div className="absolute top-0 right-0 z-0">
+          <Image
+            priority
+            src="/BG-Symbol.png"
+            alt="Hero Image"
+            width={406}
+            height={854}
+            className="object-cover max-w-64 sm:max-w-full sm:min-h-full"
+          />
+        </div>
+        <WhatsAppButton />
       </body>
     </html>
   );

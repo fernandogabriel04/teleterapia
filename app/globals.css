@@ -80,3 +80,9 @@ body {
   animation: circularMotion 4s linear infinite; /* Movimento contínuo */
 }
 
+@font-face {
+  font-family: 'UniviaPro';
+  src: url('/fonts/Univia PRO/UniviaPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

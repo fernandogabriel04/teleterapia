@@ -1,64 +1,92 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { useState } from "react";
+import { MdOutlineMenu } from "react-icons/md";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
-    <header className="bg-white text-white py-4 px-6 shadow-lg fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-6xl mx-auto flex items-center justify-between">
+    <header className="bg-opacity-0 text-white py-[3rem]">
+      <div className="relative mx-auto flex items-center justify-between px-6 z-[1]">
         {/* Título à esquerda */}
-        <div className="flex items-center">
+        <div className="flex items-center max-w-56 sm:max-w-[30rem]">
           <Link href="/">
-            <Image src="/logo.png" alt="Logo" width={50} height={50} />
+            <Image src="/logo.svg" alt="Logo" width={473} height={95} priority />
           </Link>
         </div>
 
-        {/* Seções de navegação ao centro */}
-        <nav className="hidden md:flex space-x-8">
-          <Link
-            href="#hero"
-            className="text-[#234C90] hover:text-blue-700 transition duration-300"
-          >
-            Início
-          </Link>
-          <Link
-            href="#benefits"
-            className="text-[#234C90] hover:text-blue-700 transition duration-300"
-          >
-            Benefícios
-          </Link>
-          <Link
-            href="#how-it-works"
-            className="text-[#234C90] hover:text-blue-700 transition duration-300"
-          >
-            Como Funciona
-          </Link>
-          <Link
-            href="#feedbacks"
-            className="text-[#234C90] hover:text-blue-700 transition duration-300"
-          >
-            Feedbacks
-          </Link>
-          <Link
-            href="#faq"
-            className="text-[#234C90] hover:text-blue-700 transition duration-300"
-          >
-            FAQ
-          </Link>
-        </nav>
+        {/* Menu e Botões */}
+        <div className="flex items-center gap-[1.5rem]">
+          {/* Seções de navegação */}
+          <nav className="hidden xl:flex tracking-normal text-[1rem] font-bold text-white space-x-5 whitespace-nowrap xl:space-x-3">
+            <Link href="#hero" className="text-primary-green transition duration-300 font-extrabold">
+              Início
+            </Link>
+            <Link href="#benefits" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+              Benefícios
+            </Link>
+            <Link href="#how-it-works" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+              Como Funciona
+            </Link>
+            <Link href="#feedbacks" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+              Depoimentos
+            </Link>
+            <Link href="#faq" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+              Perguntas
+            </Link>
+          </nav>
 
-        {/* Botão "Agendar Agora" à direita */}
-        <div className="flex items-center">
-          <Link
-            href="https://wa.me/+558233125492"
-            target="_blank"
-            className="flex items-center bg-gradient-to-b from-[#3B82F6] to-[#234C90] text-[#EFF6FF] font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-gray-200 transition duration-300"
+          {/* Botões "Agendar Agora" e ícones - Somente visível em telas médias e maiores */}
+          <div className="hidden sm:flex items-center gap-4">
+            <Link
+              href="https://wa.me/+558233125492"
+              target="_blank"
+              className="flex items-center bg-white text-primary-blue font-semibold rounded-full shadow-lg hover:bg-gray-200 transition duration-300 tracking-normal text-[1rem]"
+            >
+              <FaWhatsapp className="p-2 text-5xl" />
+              Atendimento <span className="font-extrabold p-1 mr-2">24h</span>
+            </Link>
+            <Link href="https://wa.me/+558233125492" target="_blank">
+              <FaInstagram className="text-[2rem]" />
+            </Link>
+          </div>
+
+          {/* Menu Hamburguer - visível apenas em telas menores */}
+          <button
+            className="xl:hidden flex items-center justify-center p-2"
+            onClick={toggleMenu}
           >
-            <FaWhatsapp className="mr-2 text-lg" />
-            Atendimento 24h
-          </Link>
+            <MdOutlineMenu className="text-3xl text-white" />
+          </button>
         </div>
       </div>
+
+      {/* Menu Dropdown - visível em telas menores */}
+      {isMenuOpen && (
+        <div className="md:hidden flex flex-col items-center bg-blue-500 text-white py-4 space-y-4">
+          <Link href="#hero" className="text-primary-green transition duration-300 font-extrabold">
+            Início
+          </Link>
+          <Link href="#benefits" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+            Benefícios
+          </Link>
+          <Link href="#how-it-works" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+            Como Funciona
+          </Link>
+          <Link href="#feedbacks" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+            Depoimentos
+          </Link>
+          <Link href="#faq" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+            Perguntas
+          </Link>
+        </div>
+      )}
     </header>
   );
 };
