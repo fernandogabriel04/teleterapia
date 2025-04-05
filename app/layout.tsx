@@ -9,7 +9,10 @@ const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Teleterapia",
-  description: "",
+  description: "Saúde Mental Para Todos",
+  icons: {
+    icon: "/icons/logo.svg",
+  },
 };
 
 export default function RootLayout({
