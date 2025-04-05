@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.className} antialiased max-w-[1400px] px-[2.5rem] mx-auto text-white text-[1.44rem] bg-primary-blue`}
+        className={`${openSans.className} antialiased max-w-[1400px] mx-auto text-white text-[1.44rem] bg-primary-blue`}
       >
         <main>
         {children}

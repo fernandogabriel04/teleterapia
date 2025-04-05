@@ -4,13 +4,14 @@ import HowItWorks from  './_components/HowItWorks';
 import Testimonials from  './_components/Testimonials';
 import FAQ from  './_components/FAQ';
 import CTA from  './_components/CTA';
-import Footer from  './_components/Footer';
 import Header from './_components/Header';
+import FooterSection from './_components/FooterSection';
 
 
 export default function Home() {
   return (
-    <div>
+    <>
+    <div className='px-[2.5rem]'>
       <Header />
       <HeroSection />
       <Benefits />
@@ -18,7 +19,8 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <CTA />
-      <Footer />
     </div>
+    <FooterSection />
+    </>
   );
 }
