@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import HeroSection from './_components/HeroSection';
 import Benefits from  './_components/Benefits';
 import HowItWorks from  './_components/HowItWorks';
@@ -12,11 +11,6 @@ import Header from './_components/Header';
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Teleterapia de Maceió</title>
-        <meta name="description" content="Acesse a teleterapia de Maceió e receba atendimento psicológico sem custos." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
       <Header />
       <HeroSection />
       <Benefits />

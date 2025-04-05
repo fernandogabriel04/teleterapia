@@ -25,7 +25,9 @@ export default function RootLayout({
       <body
         className={`${openSans.className} antialiased max-w-[1400px] px-[2.5rem] mx-auto text-white text-[1.44rem] bg-primary-blue`}
       >
+        <main>
         {children}
+        </main>
         {/* Imagem de fundo simbólica (fixa na lateral direita) */}
         <div className="absolute top-0 right-0 z-0">
           <Image
@@ -37,6 +39,18 @@ export default function RootLayout({
             className="object-cover max-w-64 sm:max-w-full sm:min-h-full"
           />
         </div>
+        {/* Imagem de fundo simbólica (fixa na lateral direita) */}
+        <div className="absolute top-full right-0 left-0 z-0">
+          <Image
+            priority
+            src="/Line-Transversal.png"
+            alt=""
+            width={1920}
+            height={1080}
+            className="object-cover max-w-64 sm:max-w-full sm:min-h-full"
+          />
+        </div>
+        {/* <div className="min-w-[200%] h-1 bg-green-500 transform rotate-12 absolute top-[150%] left-0 z-0"></div> */}
         <WhatsAppButton />
       </body>
     </html>

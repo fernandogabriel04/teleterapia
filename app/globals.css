@@ -86,3 +86,9 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Neulis Alt';
+  src: url('/fonts/Neulis-Family/Neulis-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

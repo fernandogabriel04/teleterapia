@@ -16,6 +16,7 @@ export default {
       },
       fontFamily: {
         univia: ['UniviaPro', 'sans-serif'],
+        neulis: ['Neulis Alt', 'sans-serif'],
       },
     },
   },
