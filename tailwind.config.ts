@@ -11,6 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'primary-blue': '#0080ff',
+        'primary-green': '#00ff82',
+      },
+      fontFamily: {
+        univia: ['UniviaPro', 'sans-serif'],
       },
     },
   },
