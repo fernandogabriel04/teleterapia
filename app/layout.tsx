@@ -39,10 +39,7 @@ export default function RootLayout({
             className="object-cover max-w-64 sm:max-w-full sm:min-h-full"
           />
         </div>
-        {/* Imagem de fundo simbólica (fixa na lateral direita) */}
-        <div className="relative top-full right-0 left-0 z-0 w-[2000px] bg-primary-green">
-        </div>
-        {/* <div className="min-w-[200%] h-1 bg-green-500 transform rotate-12 absolute top-[150%] left-0 z-0"></div> */}
+        
         <WhatsAppButton />
       </body>
     </html>
