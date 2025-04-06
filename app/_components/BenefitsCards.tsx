@@ -26,6 +26,7 @@ const BenefitsCards = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4">
+      <div className="relative top-full -bottom-[448px] right-0 -left-32 z-0 min-w-[2000px] min-h-[4px] rotate-[18deg] bg-primary-green"></div>
       <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center justify-center">
         {benefits.map((benefit, index) => (
           <BenefitsCard

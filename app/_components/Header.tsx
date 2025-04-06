@@ -12,7 +12,7 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="bg-opacity-0 text-white py-[3rem]">
+    <header className="bg-opacity-0 text-white py-[3rem] px-[2.5rem]">
       <div className="relative mx-auto flex items-center justify-between px-6 z-[1]">
         {/* Título à esquerda */}
         <div className="flex items-center max-w-56 sm:max-w-[30rem]">

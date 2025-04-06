@@ -6,15 +6,17 @@ import FAQ from  './_components/FAQ';
 import CTA from  './_components/CTA';
 import Header from './_components/Header';
 import FooterSection from './_components/FooterSection';
+import VideoSection from './_components/VideoSection';
 
 
 export default function Home() {
   return (
     <>
-      <div className='px-[2.5rem]'>
+      <div>
         <Header />
         <HeroSection />
         <Benefits />
+        <VideoSection />
         <HowItWorks />
         <Testimonials />
         <FAQ />

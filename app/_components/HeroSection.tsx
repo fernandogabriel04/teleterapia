@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative flex flex-col md:flex-row justify-between items-start min-h-screen px-6 pt-24 mt-8 md:mt-0"
+      className="relative flex flex-col md:flex-row justify-between items-start min-h-screen px-24 pt-24 mt-8 md:mt-0"
     >
       {/* Texto e Botões */}
       <div className="flex flex-col items-start max-w-full sm:max-w-2xl z-10 space-y-6">
@@ -41,8 +41,6 @@ const HeroSection = () => {
             <FaArrowRightLong className="ml-2 text-2xl sm:text-3xl font-bold" />
           </a>
         </div>
-
-
       </div>
 
       {/* Imagem à direita */}
