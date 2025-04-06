@@ -7,6 +7,7 @@ import CTA from  './_components/CTA';
 import Header from './_components/Header';
 import FooterSection from './_components/FooterSection';
 import VideoSection from './_components/VideoSection';
+import SecureSection from './_components/SecureSection';
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <HeroSection />
         <Benefits />
         <VideoSection />
+        <SecureSection />
         <HowItWorks />
         <Testimonials />
         <FAQ />
