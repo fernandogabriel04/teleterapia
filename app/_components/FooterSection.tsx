@@ -8,7 +8,7 @@ import Footer from "./Footer";
 const FooterSection = () => {
     return (
       <>
-      <section className="bg-primary-green text-primary-blue py-24 flex flex-col items-center gap-8 w-full">
+      <section className="bg-primary-green text-primary-blue py-24 pb-56 flex flex-col items-center gap-8 w-full">
         <div className="flex flex-col items-center text-center gap-6">
           <h1 className="text-5xl font-neulis">Conte-nos como a Teleterapia<br/>Maceió te ajudou</h1>
           <p>Deixe seu relato para incentivar outras pessoas também :)</p>

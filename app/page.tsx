@@ -11,16 +11,16 @@ import FooterSection from './_components/FooterSection';
 export default function Home() {
   return (
     <>
-    <div className='px-[2.5rem]'>
-      <Header />
-      <HeroSection />
-      <Benefits />
-      <HowItWorks />
-      <Testimonials />
-      <FAQ />
-      <CTA />
-    </div>
-    <FooterSection />
+      <div className='px-[2.5rem]'>
+        <Header />
+        <HeroSection />
+        <Benefits />
+        <HowItWorks />
+        <Testimonials />
+        <FAQ />
+        <CTA />
+      </div>
+      <FooterSection />
     </>
   );
 }

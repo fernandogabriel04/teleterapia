@@ -13,6 +13,7 @@ export default {
         foreground: "var(--foreground)",
         'primary-blue': '#0080ff',
         'primary-green': '#00ff82',
+        'secondary-blue':'#10467C'
       },
       fontFamily: {
         univia: ['UniviaPro', 'sans-serif'],
