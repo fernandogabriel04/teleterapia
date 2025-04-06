@@ -1,6 +1,5 @@
 import HeroSection from './_components/HeroSection';
 import Benefits from  './_components/Benefits';
-import HowItWorks from  './_components/HowItWorks';
 import Testimonials from  './_components/Testimonials';
 import FAQ from  './_components/FAQ';
 import Header from './_components/Header';
@@ -19,7 +18,6 @@ export default function Home() {
         <Benefits />
         <VideoSection />
         <SecureSection />
-        <HowItWorks />
         <NewsSection />
         <FAQ />
         <Testimonials />

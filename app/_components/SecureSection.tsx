@@ -31,7 +31,7 @@ export default function SecureSection() {
             </div>
 
             {/* CONTEUDO DA SEÇÃO */}
-            <div className="rounded-3xl bg-primary-blue mt-72">
+            <div className="rounded-3xl bg-primary-blue mt-72 mb-[4rem]">
                 {/* Imagem de Header */}
                 <div className="-mt-[16.5rem] relative flex-1 w-full">
                     <Image
@@ -47,17 +47,17 @@ export default function SecureSection() {
                     {/* Esquerdo */}
                     <div className="flex flex-col items-center justify-center gap-4 text-white text-2xl p-8 border-[4px] border-white rounded-[4rem] w-1/2">
                         <div className="flex flex-col items-start justify-center gap-4 text-white text-2xl p-8 font-univia">
-                            <Check 
-                                title={<h1>Atendimento <span className="font-extrabold">100% gratuito</span></h1>} 
+                            <Check
+                                title={<h1>Atendimento <span className="font-extrabold">100% gratuito</span></h1>}
                             />
-                            <Check 
-                                title={<h1>Suporte psicológico <span className="font-extrabold">imediato</span></h1>} 
+                            <Check
+                                title={<h1>Suporte psicológico <span className="font-extrabold">imediato</span></h1>}
                             />
-                            <Check 
-                                title={<h1>Disponível <span className="font-extrabold">24 horas,</span> todos os dias</h1>} 
+                            <Check
+                                title={<h1>Disponível <span className="font-extrabold">24 horas,</span> todos os dias</h1>}
                             />
-                            <Check 
-                                title={<h1><span className="font-extrabold">Sem</span> encaminhamento</h1>} 
+                            <Check
+                                title={<h1><span className="font-extrabold">Sem</span> encaminhamento</h1>}
                             />
                         </div>
                     </div>
@@ -70,7 +70,7 @@ export default function SecureSection() {
                             <Check variant="second" title={<h2><span className="font-extrabold">Mães sobrecarregadas</span> e precisando de apoio.</h2>} />
                             <Check variant="second" title={<h2><span className="font-extrabold">Trabalhadores estressados</span> ou com burnout.</h2>} />
                             <Check variant="second" title={<h2>Qualquer pessoa <span className="font-extrabold">que sinta necessidade de conversar </span>com um profissional.</h2>} />
-                            
+
                             <h2></h2>
                         </div>
 
