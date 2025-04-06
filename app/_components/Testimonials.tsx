@@ -1,80 +1,35 @@
-import Image from "next/image";
+import CardTestimonial from "./CardTestimonial"
+import { PropsCardTestimonial } from "./CardTestimonial"
 
-const TestimonialsSection = () => {
+const cards: Array<PropsCardTestimonial> = [
+    {comment: "A experiência foi transformadora. Finalmente encontrei o apoio que precisava para superar meus desafios emocionais.", author: "João Silva", stars: 5},
+    {comment: "As sessões de teleterapia me ajudaram a lidar melhor com a ansiedade e a entender melhor minhas emoções. Eu simplesmente adorei.", author: "Maria Oliveira", stars: 5},
+    {comment: "Nunca imaginei que a terapia online fosse tão eficaz. Me sinto acolhido e seguro em todas as sessões. Eu mesmo tinha muito medo desse modelo, mas funcionou de verdade.", author: "Carlos Santos", stars: 5}
+]
+
+const Testimonials = () => {
     return (
-      <section id="feedbacks" className="bg-white py-36">
-        <div className="max-w-6xl mx-auto text-center px-6">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-blue-500 mb-12">
-            O que Nossos Pacientes Dizem
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Depoimento 1 */}
-            <div className="bg-gray-100 p-8 rounded-lg shadow-lg">
-              <div className="flex justify-center mb-6">
-                <Image
-                  src="/owl-perfil.png"
-                  width={100}
-                  height={100}
-                  alt="Paciente"
-                  className="w-24 h-24 rounded-full object-cover"
-                />
-              </div>
-              <p className="text-lg text-gray-700 mb-4">
-                A experiência foi transformadora. Finalmente encontrei o apoio
-                que precisava para superar meus desafios emocionais.
-              </p>
-              <h4 className="text-xl font-semibold text-blue-500">
-                João Silva
-              </h4>
-              <p className="text-sm text-gray-500">Paciente</p>
+        <section className="flex flex-col w-full pt-12  items-center bg-white">
+            <div className="items-center w-[80%] md:w-[45%]">
+                <p className="text-[#00ff82] font-neulis text-center text-6xl [--stroke-color:#00ff82] [-webkit-text-stroke:2px_var(--stroke-color)]" style={{fontWeight: 1500}}>O que estão falando do nosso programa?</p>
             </div>
+            <div className="flex flex-col flex-wrap w-full md:flex-row items-center md:justify-center mt-2"
+                style={{background: "linear-gradient(to bottom, white 40%, #00ff82 40%)"}}
+            >
+                {
+                    cards.map((card, index) => (
+                        <CardTestimonial
+                            key={index}
+                            comment={card.comment}
+                            author={card.author}
+                            stars={card.stars}
+                        />
+                    ))
+                }
+            </div>
+        </section>
+        
+    )
+}
 
-            {/* Depoimento 2 */}
-            <div className="bg-gray-100 p-8 rounded-lg shadow-lg">
-              <div className="flex justify-center mb-6">
-              <Image
-                  src="/owl-perfil.png"
-                  width={100}
-                  height={100}
-                  alt="Paciente"
-                  className="w-24 h-24 rounded-full object-cover"
-                />
-              </div>
-              <p className="text-lg text-gray-700 mb-4">
-                As sessões de teleterapia me ajudaram a lidar melhor com a
-                ansiedade e a entender melhor minhas emoções.
-              </p>
-              <h4 className="text-xl font-semibold text-blue-500">
-                Maria Oliveira
-              </h4>
-              <p className="text-sm text-gray-500">Paciente</p>
-            </div>
-
-            {/* Depoimento 3 */}
-            <div className="bg-gray-100 p-8 rounded-lg shadow-lg">
-              <div className="flex justify-center mb-6">
-              <Image
-                  src="/owl-perfil.png"
-                  width={100}
-                  height={100}
-                  alt="Paciente"
-                  className="w-24 h-24 rounded-full object-cover"
-                />
-              </div>
-              <p className="text-lg text-gray-700 mb-4">
-                Nunca imaginei que a terapia online fosse tão eficaz. Me sinto
-                acolhido e seguro em todas as sessões.
-              </p>
-              <h4 className="text-xl font-semibold text-blue-500">
-                Carlos Santos
-              </h4>
-              <p className="text-sm text-gray-500">Paciente</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
-  };
-  
-  export default TestimonialsSection;
-  
+export default Testimonials

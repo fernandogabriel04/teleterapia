@@ -1,108 +1,52 @@
-"use client";
+import InfoAccordion from "./InfoAccordion";
+import { PropsInfoAccordion } from "./InfoAccordion";
 
-import { useState } from "react";
+const infos: Array<PropsInfoAccordion> = [
+    {
+        title: "Como posso agendar minha sessão?",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero, amet nisi minus quis quasi error soluta tenetur eius in perferendis accusantium dicta. Fugit nobis animi laboriosam, dolorum repudiandae labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure, omnis aliquam eveniet in facere quos enim necessitatibus quis culpa rerum atque! Voluptatum, nemo. Consequuntur eveniet ab voluptatum iste sapiente!"
+    },
+    {
+        title: "As sessões são realmente gratuitas?",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero, amet nisi minus quis quasi error soluta tenetur eius in perferendis accusantium dicta. Fugit nobis animi laboriosam, dolorum repudiandae labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure, omnis aliquam eveniet in facere quos enim necessitatibus quis culpa rerum atque! Voluptatum, nemo. Consequuntur eveniet ab voluptatum iste sapiente!"
+    },
+    {
+        title: "Preciso de algum equipamento específico?",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero, amet nisi minus quis quasi error soluta tenetur eius in perferendis accusantium dicta. Fugit nobis animi laboriosam, dolorum repudiandae labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure, omnis aliquam eveniet in facere quos enim necessitatibus quis culpa rerum atque! Voluptatum, nemo. Consequuntur eveniet ab voluptatum iste sapiente!"
+    },
+    {
+        title: "Como garantir privacidade durante a sessão?",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero, amet nisi minus quis quasi error soluta tenetur eius in perferendis accusantium dicta. Fugit nobis animi laboriosam, dolorum repudiandae labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure, omnis aliquam eveniet in facere quos enim necessitatibus quis culpa rerum atque! Voluptatum, nemo. Consequuntur eveniet ab voluptatum iste sapiente!"
+    }
+]
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+    return (
 
-  const toggleAnswer = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
-  return (
-    <section id="faq" className="bg-blue-50 py-36">
-      <div className="max-w-6xl mx-auto text-center px-6">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-blue-500 mb-12">
-          Perguntas Frequentes
-        </h2>
-        <div className="space-y-6">
-          {/* Pergunta 1 */}
-          <div
-            className="bg-white p-6 rounded-lg shadow-lg cursor-pointer"
-            onClick={() => toggleAnswer(1)}
-          >
-            <div className="flex justify-between items-center">
-              <h3 className="text-2xl font-semibold text-blue-500">
-                Como posso agendar minha sessão?
-              </h3>
-              <span className="text-blue-500 text-2xl">
-                {openIndex === 1 ? "-" : "+"}
-              </span>
+        <section className="flex flex-col w-full items-center bg-white pt-20">
+            <div className="flex flex-row w-[90%] items-center justify-around">
+                <div className="h-1 bg-[#00ff82] w-[17%] rounded-full"></div>
+                <div className="text-[#007efc] font-neulis text-center text-6xl [--stroke-color:#007efc] [-webkit-text-stroke:2px_var(--stroke-color)]">Perguntas frequentes</div>
+                <div className="h-1 bg-[#00ff82] w-[17%] rounded-full"></div>
             </div>
-            {openIndex === 1 && (
-              <p className="mt-4 text-lg text-gray-700">
-                Você pode agendar sua sessão diretamente pelo link do WhatsApp
-                disponível na página.
-              </p>
-            )}
-          </div>
-
-          {/* Pergunta 2 */}
-          <div
-            className="bg-white p-6 rounded-lg shadow-lg cursor-pointer"
-            onClick={() => toggleAnswer(2)}
-          >
-            <div className="flex justify-between items-center">
-              <h3 className="text-2xl font-semibold text-blue-500">
-                As sessões são realmente gratuitas?
-              </h3>
-              <span className="text-blue-500 text-2xl">
-                {openIndex === 2 ? "-" : "+"}
-              </span>
+            <div className="flex flex-col w-[90%] mt-10">
+                {infos.map((info, index) => (
+                    <InfoAccordion
+                        key={index}
+                        title={info.title}
+                        description={info.description}
+                    />
+                ))}
             </div>
-            {openIndex === 2 && (
-              <p className="mt-4 text-lg text-gray-700">
-                Sim, todas as sessões são totalmente gratuitas, sem qualquer
-                custo para você.
-              </p>
-            )}
-          </div>
-
-          {/* Pergunta 3 */}
-          <div
-            className="bg-white p-6 rounded-lg shadow-lg cursor-pointer"
-            onClick={() => toggleAnswer(3)}
-          >
-            <div className="flex justify-between items-center">
-              <h3 className="text-2xl font-semibold text-blue-500">
-                Preciso de algum equipamento específico?
-              </h3>
-              <span className="text-blue-500 text-2xl">
-                {openIndex === 3 ? "-" : "+"}
-              </span>
+            <div className="flex flex-row w-[90%] items-center justify-around mt-14">
+                <div className="h-1 bg-[#db9a6e] w-[20%] md:w-[33%] rounded-full"></div>
+                <div className="flex flex-col h-14 w-[60%] md:w-[34%] bg-[#db9a6e] rounded-full justify-center">
+                    <p className="text-center text-white font-sans text-lg font-black">Seja atendido agora mesmo!</p>
+                </div>
+                <div className="h-1 bg-[#db9a6e] w-[20%] md:w-[33%] rounded-full"></div>
             </div>
-            {openIndex === 3 && (
-              <p className="mt-4 text-lg text-gray-700">
-                Apenas um dispositivo com acesso à internet e o WhatsApp são
-                necessários para realizar a sessão.
-              </p>
-            )}
-          </div>
+        </section>
+    );
+}
 
-          {/* Pergunta 4 */}
-          <div
-            className="bg-white p-6 rounded-lg shadow-lg cursor-pointer"
-            onClick={() => toggleAnswer(4)}
-          >
-            <div className="flex justify-between items-center">
-              <h3 className="text-2xl font-semibold text-blue-500">
-                Como posso garantir a privacidade durante a sessão?
-              </h3>
-              <span className="text-blue-500 text-2xl">
-                {openIndex === 4 ? "-" : "+"}
-              </span>
-            </div>
-            {openIndex === 4 && (
-              <p className="mt-4 text-lg text-gray-700">
-                As sessões são realizadas de forma privada, garantindo o sigilo
-                absoluto das suas informações e sentimentos.
-              </p>
-            )}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default FAQ;
+export default FAQ
