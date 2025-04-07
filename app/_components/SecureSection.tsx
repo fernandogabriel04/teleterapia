@@ -5,7 +5,7 @@ import Check from "./ui/check";
 
 export default function SecureSection() {
     return (
-        <section className="bg-zinc-100 flex flex-col items-center py-24 overflow-hidden mb-[10rem] md:mb-0">
+        <section id="conhecer" className="bg-zinc-100 flex flex-col items-center py-24 overflow-hidden mb-[10rem] md:mb-0">
             {/* TITULO DA SEÇÃO */}
             <div className="flex justify-center items-center text-5xl md:text-6xl lg:text-9xl text-primary-blue font-neulis leading-none font-[500] lg:font-[1000] gap-2">
                 <span
@@ -35,6 +35,7 @@ export default function SecureSection() {
                 {/* Imagem de Header */}
                 <div className="-mt-[10rem] lg:-mt-[16.5rem] relative flex-1 w-[30rem] md:w-full mx-auto">
                     <Image
+                        priority
                         src={HeaderImage}
                         alt="Imagem de cabeçalho"
                         width={600}
@@ -76,7 +77,7 @@ export default function SecureSection() {
 
                     </div>
                 </div>
-                <div className="bg-[#00ff82] flex flex-row items-center justify-center gap-4 p-4 rounded-e-[4rem] w-auto h-auto md:w-[40rem] md:h-[15rem] px-[4.5rem] md:-mb-[4rem] lg:-ml-[4rem]">
+                <div className="bg-[#00ff82] flex flex-row items-center justify-center gap-4 p-4 rounded-e-[4rem] w-auto h-auto md:w-[40rem] md:h-[15rem] pr-[5rem] pl-[7rem] md:-mb-[4rem] lg:-ml-[4rem]">
                     <Image src={qrcode} alt="Imagem de cabeçalho" width={140} height={40} className="object-cover" />
                     <h1 className="text-[#0e59a5] font-semibold"><span className="font-extrabold">Aponte a câmera do celular para o QR CODE</span> e receba atendimento via Whatsapp</h1>
                 </div>

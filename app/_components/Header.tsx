@@ -45,14 +45,14 @@ const Header = () => {
           {/* Botões "Agendar Agora" e ícones - Somente visível em telas médias e maiores */}
           <div className="hidden sm:flex items-center gap-4">
             <Link
-              href="https://wa.me/+558233125492"
+              href="https://wa.me/558233125492?text=Ol%C3%A1%21%20Gostaria%20de%20iniciar%20meu%20atendimento%20por%20teleterapia.%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20para%20o%20pr%C3%B3ximo%20passo."
               target="_blank"
               className="flex items-center bg-white text-primary-blue font-semibold rounded-full shadow-lg hover:bg-gray-200 transition duration-300 tracking-normal text-[1rem]"
             >
               <FaWhatsapp className="p-2 text-5xl" />
               Atendimento <span className="font-extrabold p-1 mr-2">24h</span>
             </Link>
-            <Link href="https://wa.me/+558233125492" target="_blank">
+            <Link href="https://wa.me/558233125492?text=Ol%C3%A1%21%20Gostaria%20de%20iniciar%20meu%20atendimento%20por%20teleterapia.%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20para%20o%20pr%C3%B3ximo%20passo." target="_blank">
               <FaInstagram className="text-[2rem]" />
             </Link>
           </div>

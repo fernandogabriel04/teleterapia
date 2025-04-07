@@ -25,15 +25,15 @@ const HeroSection = () => {
         {/* Botões */}
         <div className="flex flex-row items-center gap-3 sm:gap-5 -ml-8 flex-nowrap whitespace-nowrap">
           <a
-            href="https://wa.me/+558233125492"
-            target="_blank"
+            href="#conhecer"
             className="flex items-center bg-[#72f58b] text-primary-blue font-semibold py-2 px-6 sm:py-2 sm:px-8 rounded-full text-xs sm:text-lg shadow-lg transition duration-300 transform hover:scale-105 hover:shadow-md"
           >
             Conhecer
             <FaArrowRightLong className="ml-2 text-2xl sm:text-3xl  font-bold" />
           </a>
           <a
-            href="https://wa.me/+558233125492"
+            href="https://wa.me/558233125492?text=Ol%C3%A1%21%20Gostaria%20de%20iniciar%20meu%20atendimento%20por%20teleterapia.%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20para%20o%20pr%C3%B3ximo%20passo.
+"
             target="_blank"
             className="flex items-center bg-white text-primary-blue font-semibold py-2 px-6 sm:py-2 sm:px-8 rounded-full text-xs sm:text-lg shadow-lg transition duration-300 transform hover:scale-105 hover:shadow-md w-full"
           >
