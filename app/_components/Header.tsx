@@ -17,7 +17,7 @@ const Header = () => {
         {/* Título à esquerda */}
         <div className="flex items-center max-w-56 sm:max-w-[30rem]">
           <Link href="/">
-            <Image src="/logo.svg" alt="Logo" width={473} height={95} priority />
+            <Image src="/Logo.svg" alt="Logo" width={473} height={95} priority />
           </Link>
         </div>
 
