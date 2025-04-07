@@ -4,19 +4,19 @@ import { PropsInfoAccordion } from "./InfoAccordion";
 const infos: Array<PropsInfoAccordion> = [
     {
         title: "Como posso agendar minha sessão?",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero, amet nisi minus quis quasi error soluta tenetur eius in perferendis accusantium dicta. Fugit nobis animi laboriosam, dolorum repudiandae labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure, omnis aliquam eveniet in facere quos enim necessitatibus quis culpa rerum atque! Voluptatum, nemo. Consequuntur eveniet ab voluptatum iste sapiente!"
+        description: "Você pode agendar sua sessão diretamente pelo link do WhatsApp disponível na página."
     },
     {
         title: "As sessões são realmente gratuitas?",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero, amet nisi minus quis quasi error soluta tenetur eius in perferendis accusantium dicta. Fugit nobis animi laboriosam, dolorum repudiandae labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure, omnis aliquam eveniet in facere quos enim necessitatibus quis culpa rerum atque! Voluptatum, nemo. Consequuntur eveniet ab voluptatum iste sapiente!"
+        description: " Sim, todas as sessões são totalmente gratuitas, sem qualquer custo para você"
     },
     {
         title: "Preciso de algum equipamento específico?",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero, amet nisi minus quis quasi error soluta tenetur eius in perferendis accusantium dicta. Fugit nobis animi laboriosam, dolorum repudiandae labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure, omnis aliquam eveniet in facere quos enim necessitatibus quis culpa rerum atque! Voluptatum, nemo. Consequuntur eveniet ab voluptatum iste sapiente!"
+        description: "Apenas um dispositivo com acesso à internet e o WhatsApp são necessários para realizar a sessão."
     },
     {
         title: "Como garantir privacidade durante a sessão?",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero, amet nisi minus quis quasi error soluta tenetur eius in perferendis accusantium dicta. Fugit nobis animi laboriosam, dolorum repudiandae labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure, omnis aliquam eveniet in facere quos enim necessitatibus quis culpa rerum atque! Voluptatum, nemo. Consequuntur eveniet ab voluptatum iste sapiente!"
+        description: "As sessões são realizadas de forma privada, garantindo o sigilo absoluto das suas informações e sentimentos."
     }
 ]
 
