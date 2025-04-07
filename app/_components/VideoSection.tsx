@@ -1,7 +1,7 @@
 export default function VideoSection() {
     return (
         <section className="bg-zinc-100 text-zinc-900 pt-56 px-24 gap-4 flex flex-col items-center">
-            <div className="flex justify-between gap-16 items-center">
+            <div className="flex flex-col md:flex-row justify-between gap-16 items-center">
                 <h1 className="text-4xl text-end text-nowrap text-secondary-blue">24h por dia<br/>7 dias por semana.<br/><strong>Veja no vídeo<br/> como funciona</strong></h1>
                     <div className="bg-primary-blue min-w-4 h-16 rounded-full"></div>
                 <p className="text-xl">Se você precisa de apoio emocional, o <strong>

@@ -5,9 +5,9 @@ import Check from "./ui/check";
 
 export default function SecureSection() {
     return (
-        <section className="bg-zinc-100 flex flex-col items-center py-24 overflow-hidden">
+        <section className="bg-zinc-100 flex flex-col items-center py-24 overflow-hidden mb-[10rem] md:mb-0">
             {/* TITULO DA SEÇÃO */}
-            <div className="flex justify-center items-center text-9xl text-primary-blue font-neulis leading-none font-[1000] gap-2">
+            <div className="flex justify-center items-center text-5xl md:text-6xl lg:text-9xl text-primary-blue font-neulis leading-none font-[500] lg:font-[1000] gap-2">
                 <span
                     className="scale-x-[0.4] scale-y-150 origin-right -mr-[0.5rem]"
                     style={{ WebkitTextStroke: '6px #0080ff' }} // substitua pela cor da borda desejada
@@ -33,7 +33,7 @@ export default function SecureSection() {
             {/* CONTEUDO DA SEÇÃO */}
             <div className="rounded-3xl bg-primary-blue mt-72 mb-[4rem]">
                 {/* Imagem de Header */}
-                <div className="-mt-[16.5rem] relative flex-1 w-full">
+                <div className="-mt-[10rem] lg:-mt-[16.5rem] relative flex-1 w-[30rem] md:w-full mx-auto">
                     <Image
                         src={HeaderImage}
                         alt="Imagem de cabeçalho"
@@ -43,7 +43,7 @@ export default function SecureSection() {
                     />
                 </div>
                 {/* Conteudo */}
-                <div className="flex flex-col md:flex-row items-center justify-between max-w-[1200px] mx-auto my-0 px-8 gap-4">
+                <div className="flex flex-col lg:flex-row items-center justify-between max-w-[1200px] mx-auto my-0 px-8 gap-4">
                     {/* Esquerdo */}
                     <div className="flex flex-col items-center justify-center gap-4 text-white text-2xl p-8 border-[4px] border-white rounded-[4rem] w-1/2">
                         <div className="flex flex-col items-start justify-center gap-4 text-white text-2xl p-8 font-univia">
@@ -64,7 +64,7 @@ export default function SecureSection() {
                     {/* Direito */}
                     <div className="flex flex-col items-center justify-center gap-4 text-white text-2xl p-8 rounded-3xl w-1/2">
                         <div className="flex flex-col items-center justify-center gap-4 text-white text-2xl p-8">
-                            <h1 className="font-univia font-extrabold text-[4.3rem] whitespace-nowrap">Quem pode <span style={{ WebkitTextStroke: '3px #fff' }}>usar?</span></h1>
+                            <h1 className="font-univia font-extrabold text-[3rem] md:text-[4.3rem] whitespace-nowrap">Quem pode <span style={{ WebkitTextStroke: '3px #fff' }}>usar?</span></h1>
 
                             <Check variant="second" title={<h2>Pessoas que enfrentam <span className="font-extrabold">ansiedade, depressão</span> e outros desafios emocionais.</h2>} />
                             <Check variant="second" title={<h2><span className="font-extrabold">Mães sobrecarregadas</span> e precisando de apoio.</h2>} />
@@ -76,7 +76,7 @@ export default function SecureSection() {
 
                     </div>
                 </div>
-                <div className="bg-[#00ff82] flex flex-row items-center justify-center gap-4 p-4 rounded-e-[4rem] w-[40rem] h-[15rem] px-[4.5rem] -mb-[4rem] -ml-[4rem]">
+                <div className="bg-[#00ff82] flex flex-row items-center justify-center gap-4 p-4 rounded-e-[4rem] w-auto h-auto md:w-[40rem] md:h-[15rem] px-[4.5rem] md:-mb-[4rem] lg:-ml-[4rem]">
                     <Image src={qrcode} alt="Imagem de cabeçalho" width={140} height={40} className="object-cover" />
                     <h1 className="text-[#0e59a5] font-semibold"><span className="font-extrabold">Aponte a câmera do celular para o QR CODE</span> e receba atendimento via Whatsapp</h1>
                 </div>
