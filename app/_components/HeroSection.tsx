@@ -32,7 +32,7 @@ const HeroSection = () => {
             <FaArrowRightLong className="ml-2 text-2xl sm:text-3xl  font-bold" />
           </a>
           <a
-            href="https://wa.me/558233125492?text=Ol%C3%A1%21%20Gostaria%20de%20iniciar%20meu%20atendimento%20por%20teleterapia.%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20para%20o%20pr%C3%B3ximo%20passo.
+            href="https://api.whatsapp.com/send/?phone=558233125492&text=Ol%C3%A1%21+%F0%9F%92%ACGostaria+de+iniciar+meu+atendimento+por+teleterapia.+Estou+entrando+em+contato+atrav%C3%A9s+do+site+e+preciso+de+orienta%C3%A7%C3%A3o+para+o+pr%C3%B3ximo+passo.&type=phone_number&app_absent=0
 "
             target="_blank"
             className="flex items-center bg-white text-primary-blue font-semibold py-2 px-6 sm:py-2 sm:px-8 rounded-full text-xs sm:text-lg shadow-lg transition duration-300 transform hover:scale-105 hover:shadow-md w-full"
