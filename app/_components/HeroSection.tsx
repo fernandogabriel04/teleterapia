@@ -23,7 +23,7 @@ const HeroSection = () => {
         </p>
 
         {/* Botões */}
-        <div className="flex flex-row items-center gap-3 sm:gap-5 -ml-8 flex-nowrap whitespace-nowrap">
+        <div className="flex flex-col px-6 md:px-0 md:flex-row items-start md:items-center gap-3 sm:gap-5 -ml-8 flex-nowrap whitespace-nowrap">
           <a
             href="#conhecer"
             className="flex items-center bg-[#72f58b] text-primary-blue font-semibold py-2 px-6 sm:py-2 sm:px-8 rounded-full text-xs sm:text-lg shadow-lg transition duration-300 transform hover:scale-105 hover:shadow-md"
@@ -41,8 +41,6 @@ const HeroSection = () => {
             <FaArrowRightLong className="ml-2 text-2xl sm:text-3xl font-bold" />
           </a>
         </div>
-
-
       </div>
 
       {/* Imagem à direita */}

@@ -13,7 +13,7 @@ const FooterSection = () => {
           <h1 className="text-5xl font-neulis">Conte-nos como a Teleterapia<br/>Maceió te ajudou</h1>
           <p>Deixe seu relato para incentivar outras pessoas também :)</p>
         </div>
-        <div className="grid grid-cols-2 gap-2 items-stretch">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-2 items-stretch">
           {/* Coluna dos inputs */}
           <div className="flex flex-col gap-2 flex-1">
             <Input icon={<FiUser className="text-zinc-100" />} placeholder="Nome completo" />
