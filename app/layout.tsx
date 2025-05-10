@@ -13,6 +13,22 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icons/logo.svg",
   },
+  openGraph: {
+    title: "Teleterapia",
+    description: "Saúde Mental Para Todos",
+    url: "https://teleterapia.org.br",
+    siteName: "Teleterapia",
+    images: [
+      {
+        url: "/icons/logo.svg",
+        width: 1200,
+        height: 630,
+        alt: "Teleterapia Logo",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
