@@ -21,8 +21,6 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/icons/logo-v2.svg",
-        width: 1200,
-        height: 630,
         alt: "Teleterapia Logo",
       },
     ],
