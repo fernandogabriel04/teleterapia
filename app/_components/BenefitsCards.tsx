@@ -33,7 +33,7 @@ const BenefitsCards = () => {
         {
             icon: <Image src="/icons/Monitor.svg" alt="Comodidade" width={83} height={69} priority />,
             title: "Comodidade",
-            description: "Realize suas sessões de terapia no conforto da sua casa, sem sair do lugar.",
+            description: "Realize suas sessões de psicoterapia no conforto da sua casa, sem sair do lugar.",
             color: "green" as const,
         },
     ];

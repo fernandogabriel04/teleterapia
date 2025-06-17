@@ -14,15 +14,16 @@ export default function VideoSection() {
                 </p>
             </div>
             <a href="#" className="text-primary-blue underline"><strong>Saiba mais +</strong></a>
-            <iframe
+            <video
                 className="mt-8 w-full aspect-video rounded-3xl"
-                src="https://www.youtube.com/embed/qkhbA30Rgrw?si=qCx6iWivsviktSIw"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-            />
+                src="/video/teleterapia.mp4"
+                title="Vídeo institucional sobre o Teleterapia Maceió"
+                controls
+                poster="/logo-v2.png"
+            >
+                <source src="/video-teleterapia.webm" type="video/webm" />
+                Seu navegador não suporta a tag de vídeo.
+            </video>
         </section>
     );
 }

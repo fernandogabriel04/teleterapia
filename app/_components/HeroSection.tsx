@@ -12,13 +12,13 @@ const HeroSection = () => {
         {/* Título */}
         <div className="flex flex-col items-start text-4xl md:text-5xl lg:text-[5rem] mb-6 font-univia">
           <span className="font-extrabold">Psicólogos,</span>
-          <span className="italic font-bold">psicanalistas</span>
-          <span className="font-normal lg:text-[4.5rem]">e terapeutas!</span>
+          <span className="italic font-bold text-nowrap">24 horas/dia</span>
+          <span className="font-normal lg:text-[4.5rem] text-nowrap">7 dias/semana</span>
         </div>
 
         {/* Descrição */}
         <p className="text-lg md:text-xl mb-8 font-univia text-white font-semibold opacity-90">
-          Terapia online sem custo,<br />
+          Psicoterapia online sem custo,<br />
           sempre que precisar!
         </p>
 

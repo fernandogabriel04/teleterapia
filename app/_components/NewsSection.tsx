@@ -38,8 +38,8 @@ const NewsSection = () => {
                     {/* noticia */}
                     <div className="flex flex-col w-full items-start px-8 gap-4 mb-4">
                         <h3 className="text-sm md:text-xl font-bold">04 de Março &apos;25</h3>
-                        <h2 className="text-md md:text-4xl font-bold">A terapia é uma excelente ferramenta para combater a ansiedade, afirma estudos.</h2>
-                        <p className="text-sm md:text-lg">Depois da pandemia de 2021, com o aumento do home-office, a terapia tem sido uma porta de escape para muitas pessoas na atualidade.</p>
+                        <h2 className="text-md md:text-4xl font-bold">A psicoterapia é uma excelente ferramenta para combater a ansiedade, afirma estudos.</h2>
+                        <p className="text-sm md:text-lg">Depois da pandemia de 2021, com o aumento do home-office, a psicoterapia tem sido uma porta de escape para muitas pessoas na atualidade.</p>
                         <a href="#" target="_blank" className="flex items-center bg-[#72f58b] font-semibold py-2 px-4 sm:py-2 sm:px-6 rounded-full text-sm transition duration-300 transform hover:scale-105">
                             Ler mais
                             <FaArrowRight className="ml-2 text-2xl sm:text-3xl font-bold" />

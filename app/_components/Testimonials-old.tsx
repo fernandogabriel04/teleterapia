@@ -62,7 +62,7 @@ const TestimonialsSection = () => {
                 />
               </div>
               <p className="text-lg text-gray-700 mb-4">
-                Nunca imaginei que a terapia online fosse tão eficaz. Me sinto
+                Nunca imaginei que a psicoterapia online fosse tão eficaz. Me sinto
                 acolhido e seguro em todas as sessões.
               </p>
               <h4 className="text-xl font-semibold text-blue-500">
