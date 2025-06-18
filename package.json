@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^15.3.3",
     "@radix-ui/react-slot": "^1.1.2",
     "animate.css": "^4.1.1",
     "class-variance-authority": "^0.7.1",

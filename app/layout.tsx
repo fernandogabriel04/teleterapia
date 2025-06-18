@@ -3,6 +3,7 @@ import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import WhatsAppButton from "./_components/FixedWhatsapp";
 import Image from "next/image";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
@@ -42,7 +43,7 @@ export default function RootLayout({
         className={`${openSans.className} antialiased max-w-full mx-auto text-white text-[1.44rem] bg-primary-blue`}
       >
         <main>
-        {children}
+          {children}
         </main>
         {/* Imagem de fundo simbólica (fixa na lateral direita) */}
         <div className="absolute top-0 right-0 z-0">
@@ -55,8 +56,9 @@ export default function RootLayout({
             className="object-cover max-w-64 sm:max-w-full sm:min-h-full"
           />
         </div>
-        
+
         <WhatsAppButton />
+        <GoogleAnalytics gaId="G-WS6QYF0KDN" />
       </body>
     </html>
   );
