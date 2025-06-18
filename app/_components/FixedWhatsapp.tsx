@@ -10,7 +10,7 @@ const WhatsAppButton = () => {
 
       {/* Ícone do WhatsApp */}
       <a
-        href="https://api.whatsapp.com/send/?phone=558233125492&text=Ol%C3%A1%21+%F0%9F%92%ACGostaria+de+iniciar+meu+atendimento+por+teleterapia.+Estou+entrando+em+contato+atrav%C3%A9s+do+site+e+preciso+de+orienta%C3%A7%C3%A3o+para+o+pr%C3%B3ximo+passo.&type=phone_number&app_absent=0"
+        href="https://api.whatsapp.com/send/?phone=558233125492&text=%F0%9F%92%AC+Ol%C3%A1!+Gostaria+de+iniciar+meu+atendimento+por+teleterapia.+Estou+entrando+em+contato+atrav%C3%A9s+do+site+e+preciso+de+orienta%C3%A7%C3%A3o+para+o+pr%C3%B3ximo+passo.&type=phone_number&app_absent=0"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300"

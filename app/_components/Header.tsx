@@ -45,14 +45,14 @@ const Header = () => {
           {/* Botões "Agendar Agora" e ícones - Somente visível em telas médias e maiores */}
           <div className="hidden sm:flex items-center gap-4">
             <Link
-              href="https://api.whatsapp.com/send/?phone=558233125492&text=Ol%C3%A1%21+Gostaria+de+iniciar+o+meu+atendimento+de+teleterapia+%F0%9F%92%AC&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=558233125492&text=%F0%9F%92%AC+Ol%C3%A1!+Gostaria+de+iniciar+meu+atendimento+por+teleterapia.+Estou+entrando+em+contato+atrav%C3%A9s+do+site+e+preciso+de+orienta%C3%A7%C3%A3o+para+o+pr%C3%B3ximo+passo.&type=phone_number&app_absent=0"
               target="_blank"
               className="flex items-center bg-white text-primary-blue font-semibold rounded-full shadow-lg hover:bg-gray-200 transition duration-300 tracking-normal text-[1rem]"
             >
               <FaWhatsapp className="p-2 text-5xl" />
               Atendimento <span className="font-extrabold p-1 mr-2">24h</span>
             </Link>
-            <Link href="https://api.whatsapp.com/send/?phone=558233125492&text=Ol%C3%A1%21+%F0%9F%92%ACGostaria+de+iniciar+meu+atendimento+por+teleterapia.+Estou+entrando+em+contato+atrav%C3%A9s+do+site+e+preciso+de+orienta%C3%A7%C3%A3o+para+o+pr%C3%B3ximo+passo.&type=phone_number&app_absent=0" target="_blank">
+            <Link href="https://api.whatsapp.com/send/?phone=558233125492&text=%F0%9F%92%AC+Ol%C3%A1!+Gostaria+de+iniciar+meu+atendimento+por+teleterapia.+Estou+entrando+em+contato+atrav%C3%A9s+do+site+e+preciso+de+orienta%C3%A7%C3%A3o+para+o+pr%C3%B3ximo+passo.&type=phone_number&app_absent=0" target="_blank">
               <FaInstagram className="text-[2rem]" />
             </Link>
           </div>
