@@ -19,7 +19,7 @@ export default function VideoSection() {
                 src="/video/teleterapia.mp4"
                 title="Vídeo institucional sobre o Teleterapia Maceió"
                 controls
-                poster="/logo-v2.png"
+                poster="/video/poster-teleterapia.jpg"
             >
                 <source src="/video-teleterapia.webm" type="video/webm" />
                 Seu navegador não suporta a tag de vídeo.
