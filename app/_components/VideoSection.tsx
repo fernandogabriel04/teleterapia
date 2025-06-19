@@ -2,28 +2,21 @@ export default function VideoSection() {
     return (
         <section className="bg-zinc-100 text-zinc-900 pt-56 px-24 gap-4 flex flex-col items-center">
             <div className="flex flex-col md:flex-row justify-between gap-16 items-center">
-                <h1 className="text-4xl text-end text-nowrap text-secondary-blue">24h por dia<br/>7 dias por semana.<br/><strong>Veja no vídeo<br/> como funciona</strong></h1>
-                    <div className="bg-primary-blue min-w-4 h-16 rounded-full"></div>
+                <h1 className="text-4xl text-end text-nowrap text-secondary-blue">24h por dia<br />7 dias por semana.<br /><strong>Veja no vídeo<br /> como funciona</strong></h1>
+                <div className="bg-primary-blue min-w-4 h-16 rounded-full"></div>
                 <p className="text-xl">Se você precisa de apoio emocional, o <strong>
                     Teleterapia Maceió está
                     aqui para ajudar. Atendimento psicológico gratuito, sigiloso e
                     acessível para toda a população
-                </strong>. É um serviço inovador da Secretaria 
-                Municipal de Saúde que oferece atendimento psicológico gratuito para 
-                todos que precisam de suporte emocional.
+                </strong>. É um serviço inovador da Secretaria
+                    Municipal de Saúde que oferece atendimento psicológico gratuito para
+                    todos que precisam de suporte emocional.
                 </p>
             </div>
             <a href="#" className="text-primary-blue underline"><strong>Saiba mais +</strong></a>
-            <video
-                className="mt-8 w-full aspect-video rounded-3xl"
-                src="/video/teleterapia.mp4"
-                title="Vídeo institucional sobre o Teleterapia Maceió"
-                controls
-                poster="/video/poster-teleterapia.jpg"
-            >
-                <source src="/video-teleterapia.webm" type="video/webm" />
-                Seu navegador não suporta a tag de vídeo.
-            </video>
+            <div className="w-full h-full aspect-video ">
+                <iframe width="560" height="560" src="https://www.youtube-nocookie.com/embed/q5uVi-O3m0k?si=IK8__EPTphDgM5cY&controls=1&rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="w-full h-full rounded-3xl" loading="lazy" ></iframe>
+            </div>
         </section>
     );
 }
