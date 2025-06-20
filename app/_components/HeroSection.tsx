@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative flex flex-col md:flex-row justify-between items-start min-h-[800px] lg:min-h-screen px-6 md:px-[7rem] pt-24 mt-8 md:mt-0"
+      className="relative flex flex-col md:flex-row justify-between items-start min-h-[775px] px-6 pt-20 md:px-[7rem] lg:mb-2 lg:min-h-screen"
     >
       {/* Texto e Botões */}
       <div className="flex flex-col items-start max-w-full sm:max-w-2xl z-10 space-y-6">

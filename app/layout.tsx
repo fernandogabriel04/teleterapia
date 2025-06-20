@@ -46,7 +46,7 @@ export default function RootLayout({
           {children}
         </main>
         {/* Imagem de fundo simbólica (fixa na lateral direita) */}
-        <div className="absolute top-0 right-0 z-0">
+        <div className="absolute top-0 right-0 z-[-1]">
           <Image
             priority
             src="/BG-Symbol.png"

@@ -13,7 +13,7 @@ const NewsSection = () => {
         setActiveSlide(index);
     };
     return (
-        <section id="news" className="max-w-full mx-auto max-h-[37rem] flex flex-row flex-nowrap items-center justify-between">
+        <section id="news" className="max-w-full max-h-[37rem] flex flex-row flex-nowrap items-center justify-between">
             {/* Imagem */}
             <div className="hidden lg:block w-full md:w-[25%]">
                 <Image src="/Box-News.png" alt="Mãos dadas" width={1000} height={1000} className="object-contain h-auto w-full" />
@@ -22,7 +22,7 @@ const NewsSection = () => {
             {/* Conteudo */}
             <div className="w-full md:w-[75%] flex flex-row justify-between">
                 {/* Imagens */}
-                <div className="hidden xl:flex flex-row gap-4 items-center justify-center max-w-full -ml-[7rem]">
+                <div className="hidden xl:flex flex-row gap-4 items-center justify-center max-w-full -ml-[17rem]">
                     {/* Imagem 1 */}
                     <NewsCard image="News-1.png" />
                     {/* Imagem 2 */}
@@ -36,7 +36,7 @@ const NewsSection = () => {
 
                     </div>
                     {/* noticia */}
-                    <div className="flex flex-col w-full items-start px-8 gap-4 mb-4">
+                    <div className="flex flex-col w-full items-start gap-4 mb-4">
                         <h3 className="text-sm md:text-xl font-bold">04 de Março &apos;25</h3>
                         <h2 className="text-md md:text-4xl font-bold">A psicoterapia é uma excelente ferramenta para combater a ansiedade, afirma estudos.</h2>
                         <p className="text-sm md:text-lg">Depois da pandemia de 2021, com o aumento do home-office, a psicoterapia tem sido uma porta de escape para muitas pessoas na atualidade.</p>

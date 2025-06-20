@@ -1,9 +1,9 @@
 export default function VideoSection() {
     return (
-        <section className="bg-zinc-100 text-zinc-900 pt-56 px-24 gap-4 flex flex-col items-center">
-            <div className="flex flex-col md:flex-row justify-between gap-16 items-center">
-                <h1 className="text-4xl text-end text-nowrap text-secondary-blue">24h por dia<br />7 dias por semana.<br /><strong>Veja no vídeo<br /> como funciona</strong></h1>
-                <div className="bg-primary-blue min-w-4 h-16 rounded-full"></div>
+        <section id="how-it-works" className="bg-zinc-100 text-zinc-900 pt-60 flex flex-col items-center gap-8 px-12 lg:px-24">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-15">
+                <h1 className="text-end text-nowrap text-secondary-blue text-3xl md:text-4xl">24h por dia<br />7 dias por semana.<br /><strong>Veja no vídeo<br /> como funciona</strong></h1>
+                <div className="bg-primary-blue min-w-16 h-3 md:min-w-4 md:h-16 rounded-full"></div>
                 <p className="text-xl">Se você precisa de apoio emocional, o <strong>
                     Teleterapia Maceió está
                     aqui para ajudar. Atendimento psicológico gratuito, sigiloso e

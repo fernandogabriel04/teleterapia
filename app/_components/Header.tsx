@@ -8,11 +8,12 @@ import { MdOutlineMenu } from "react-icons/md";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [LinkSelected, setLinkSelected] = useState<"#hero" | "#benefits" | "#feedbacks" | "#how-it-works" | "#faq">("#hero")
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="bg-opacity-0 text-white py-[3rem] px-6 md:px-[5rem]">
+    <header className="bg-opacity-0 text-white py-[3rem] px- md:px-[5rem]">
       <div className="relative mx-auto flex items-center justify-between px-6 z-[1]">
         {/* Título à esquerda */}
         <div className="flex items-center max-w-56 sm:max-w-[30rem]">
@@ -23,21 +24,21 @@ const Header = () => {
 
         {/* Menu e Botões */}
         <div className="flex items-center gap-[1.5rem]">
-          {/* Seções de navegação */}
-          <nav className="hidden xl:flex tracking-normal text-[1rem] font-bold text-white space-x-5 whitespace-nowrap xl:space-x-3">
-            <Link href="#hero" className="text-primary-green transition duration-300 font-extrabold">
+          {/* Seções de navegação - Desktop */}
+          <nav className="hidden tracking-normal text-[1rem] font-bold text-white space-x-5 whitespace-nowrap xl:flex xl:space-x-3">
+            <Link onClick={() => setLinkSelected("#hero")} href="#hero" className={`transition duration-300 font-extrabold z-10  ${LinkSelected === "#hero" ? "text-primary-green" : "text-white" }`}>
               Início
             </Link>
-            <Link href="#benefits" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+            <Link onClick={() => setLinkSelected("#benefits")} href="#benefits" className={`transition duration-300 font-extrabold z-10  ${LinkSelected === "#benefits" ? "text-primary-green" : "text-white" }`}>
               Benefícios
             </Link>
-            <Link href="#how-it-works" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+            <Link onClick={() => setLinkSelected("#how-it-works")} href="#how-it-works" className={`transition duration-300 font-extrabold z-10  ${LinkSelected === "#how-it-works" ? "text-primary-green" : "text-white" }`}>
               Como Funciona
             </Link>
-            <Link href="#feedbacks" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+            <Link onClick={() => setLinkSelected("#feedbacks")} href="#feedbacks" className={`transition duration-300 font-extrabold z-10  ${LinkSelected === "#feedbacks" ? "text-primary-green" : "text-white" }`}>
               Depoimentos
             </Link>
-            <Link href="#faq" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+            <Link onClick={() => setLinkSelected("#faq")} href="#faq" className={`transition duration-300 font-extrabold z-10  ${LinkSelected === "#faq" ? "text-primary-green" : "text-white" }`}>
               Perguntas
             </Link>
           </nav>
@@ -69,20 +70,20 @@ const Header = () => {
 
       {/* Menu Dropdown - visível em telas menores */}
       {isMenuOpen && (
-        <div className="md:hidden flex flex-col items-center bg-blue-500 text-white py-4 space-y-4">
-          <Link href="#hero" className="text-primary-green transition duration-300 font-extrabold">
+        <div className="bg-[#00000060] flex flex-col items-center text-white mt-6 py-4 space-y-4 z-10 rounded-lg md:hidden">
+          <Link onClick={() => setLinkSelected("#hero")} href="#hero" className={`transition duration-300 z-10  ${LinkSelected === "#hero" ? "text-primary-green font-extrabold" : "text-white" }`}>
             Início
           </Link>
-          <Link href="#benefits" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+          <Link onClick={() => setLinkSelected("#benefits")} href="#benefits" className={`transition duration-300 z-10  ${LinkSelected === "#benefits" ? "text-primary-green font-extrabold" : "text-white" }`}>
             Benefícios
           </Link>
-          <Link href="#how-it-works" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+          <Link onClick={() => setLinkSelected("#how-it-works")} href="#how-it-works" className={`transition duration-300 z-10  ${LinkSelected === "#how-it-works" ? "text-primary-green font-extrabold" : "text-white" }`}>
             Como Funciona
           </Link>
-          <Link href="#feedbacks" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+          <Link onClick={() => setLinkSelected("#feedbacks")} href="#feedbacks" className={`transition duration-300 z-10  ${LinkSelected === "#feedbacks" ? "text-primary-green font-extrabold" : "text-white" }`}>
             Depoimentos
           </Link>
-          <Link href="#faq" className="hover:text-primary-green transition duration-300 hover:font-extrabold">
+          <Link onClick={() => setLinkSelected("#faq")} href="#faq" className={`transition duration-300 z-10  ${LinkSelected === "#faq" ? "text-primary-green font-extrabold" : "text-white" }`}>
             Perguntas
           </Link>
         </div>

@@ -39,9 +39,8 @@ const BenefitsCards = () => {
     ];
 
     return (
-        <div className="max-w-7xl mx-auto px-4">
-
-            <div className="flex flex-col md:flex-row gap-2 md:gap-8 items-center justify-center">
+        <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col gap-2 items-center justify-center md:flex-row md:gap-8">
                 {benefits.map((benefit, index) => (
                     <BenefitsCard
                         key={index}
@@ -49,7 +48,7 @@ const BenefitsCards = () => {
                         title={benefit.title}
                         description={benefit.description}
                         color={benefit.color}
-                        className="w-full md:w-1/3 h-[320px] flex flex-col justify-start"
+                        className="w-full p-2 flex flex-col justify-start border-b-8 border-[#00000040] md:w-1/3"
                         style={{ marginTop: windowWidth !== null && windowWidth >= 768 ? `${index * 10}rem` : "4rem", }}
                     />
                 ))}

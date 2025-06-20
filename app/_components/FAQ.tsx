@@ -22,8 +22,7 @@ const infos: Array<PropsInfoAccordion> = [
 
 const FAQ = () => {
     return (
-
-        <section className="flex flex-col w-full items-center bg-white pt-20">
+        <section id="faq" className="flex flex-col w-full items-center bg-white pt-20">
             <div className="flex flex-row w-[90%] items-center justify-around">
                 <div className="h-1 bg-[#00ff82] w-[17%] rounded-full"></div>
                 <div className="text-[#007efc] font-neulis text-center text-6xl [--stroke-color:#007efc] [-webkit-text-stroke:2px_var(--stroke-color)]">Perguntas frequentes</div>
@@ -40,7 +39,7 @@ const FAQ = () => {
             </div>
             <div className="flex flex-row w-[90%] items-center justify-around mt-14">
                 <div className="h-1 bg-[#db9a6e] w-[20%] md:w-[33%] rounded-full"></div>
-                <div className="flex flex-col h-14 w-[60%] md:w-[34%] bg-[#db9a6e] rounded-full justify-center">
+                <div className="flex flex-col h-14 w-[60%] bg-[#db9a6e] rounded-full justify-center md:w-[34%]">
                     <p className="text-center text-white font-sans text-lg font-black">Seja atendido agora mesmo!</p>
                 </div>
                 <div className="h-1 bg-[#db9a6e] w-[20%] md:w-[33%] rounded-full"></div>

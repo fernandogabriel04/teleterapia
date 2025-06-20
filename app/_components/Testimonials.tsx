@@ -9,7 +9,7 @@ const cards: Array<PropsCardTestimonial> = [
 
 const Testimonials = () => {
     return (
-        <section className="flex flex-col w-full pt-12  items-center bg-white">
+        <section id="feedbacks" className="flex flex-col w-full pt-12  items-center bg-white">
             <div className="items-center w-[80%] md:w-[45%]">
                 <p className="text-[#00ff82] font-neulis text-center text-6xl [--stroke-color:#00ff82] [-webkit-text-stroke:2px_var(--stroke-color)]" style={{fontWeight: 1500}}>O que estão falando do nosso programa?</p>
             </div>

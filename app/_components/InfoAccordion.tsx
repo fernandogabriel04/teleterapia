@@ -35,9 +35,9 @@ const InfoAccordion = ({ title, description }: PropsInfoAccordion) => {
             onClick={handleClick}
         >
             <div
-                className={`flex flex-row h-20 w-full items-center pl-16 rounded-full justify-between mb-4 ${bgColor} transition-colors duration-300`}
+                className={`flex flex-row h-20 w-full items-center pl-8 rounded-full justify-between mb-4 ${bgColor} transition-colors duration-300 md:pl-16`}
             >
-                <p className={`font-sans text-2xl md:text-3xl ${textColor} font-semibold`}>
+                <p className={`font-sans text-xl ${textColor} font-semibold md:text-3xl`}>
                     {title}
                 </p>
                 {!open && <FaPlus className={`${iconColor} mr-10`} />}
