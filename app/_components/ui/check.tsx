@@ -1,7 +1,7 @@
 import { cn } from "@/app/lib/utils";
 import Image from "next/image";
 import { ReactNode } from "react";
-import { FaCheckCircle, FaRegCheckCircle } from "react-icons/fa";
+import { FaRegCheckCircle } from "react-icons/fa";
 
 interface CheckProps {
     className?: string;
